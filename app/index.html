@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='proArch'>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,12 @@
     <script src="js\main.js"></script>
     <script src="js\angular.js"></script>
     <script src="js\bootstrap.min.js"></script>
+    <script>
+        var app = angular.module('proArch', []);
+        app.controller('proArchCtrl', function($scope){
+            $scope.message = 'Angular is pretty cool.';
+        });
+    </script>
     <!--endbuild-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,10 +30,16 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body>
+    <body ng-app='proArch'>
         <nav class="navbar navbar-default">
         </nav>
         <div class = 'container'>
+            <div class = "row">
+                <div class="test" ng-controller='proArchCtrl'>
+                    <input type="text" ng-model="message" />
+                    <span></span>
+                </div>
+            </div>
             <div class = "row">
                 <div class = "test col-lg-6">Testuję czy zadziała mi deployment projetku z Deploy HQ</div>
                 <div class = "test col-lg-6">Pracowna projektowa Pro-Arch</div>
