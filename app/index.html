@@ -12,16 +12,13 @@
     <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css" >
     <!--endbuild-->
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--build:js js/main.min.js -->
-    <script src="js\main.js"></script>
     <script src="js\angular.js"></script>
+    <script src="js\main.js"></script>
     <script src="js\bootstrap.min.js"></script>
-    <script>
-        var app = angular.module('proArch', []);
-        app.controller('proArchCtrl', function($scope){
-            $scope.message = 'Angular is pretty cool.';
-        });
-    </script>
     <!--endbuild-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,12 +27,12 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body ng-app='proArch'>
+    <body ng-app='proArch' ng-controller='proArchCtrl'>
         <nav class="navbar navbar-default">
         </nav>
         <div class = 'container'>
             <div class = "row">
-                <div class="test" ng-controller='proArchCtrl'>
+                <div class="test">
                     <input type="text" ng-model="message" />
                     <span></span>
                 </div>
@@ -47,13 +44,10 @@
             <div class = "row">
                 <div class = "test col-lg-4">zażółć gęślą jaźń</div>
                 <div class = "test col-lg-4">Bootstrap test</div>
-                <div class = "test col-lg-4">Angular test {{50 * 25}}</div>
+                <div class = "test col-lg-4">Angular test {{13 * 33}}</div>
             </div>
         </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
   </body>
   <script async></script>
 </html>
