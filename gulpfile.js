@@ -36,6 +36,11 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('sub-pages', function() {
+    return gulp.src('app/html/**/*.html')
+        .pipe(gulp.dest('dist/html'));
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -75,7 +80,7 @@ gulp.task('watch', ['browser-sync', 'sass'], function() {
 
 gulp.task('build', function(callback) {
     runSequence('clean:dist',
-        ['sass', 'useref', 'images', 'fonts'],
+        ['sass', 'useref', 'images', 'fonts', 'sub-pages'],
         callback
     );
 });
