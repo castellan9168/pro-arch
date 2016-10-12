@@ -13,7 +13,13 @@ app.config(['$routeProvider', function($routeProvider){
     .when('/contact', {
         templateUrl : 'html/contact.html'
     });
+    $routeProvider.otherwise({
+        redirectTo: "main"
+    });
 }]);
 app.controller('proArchCtrl',[ '$scope', '$route', function($scope, $route){
-    $scope.message = 'Angular is pretty cool.';
+    $scope.message = 'Contact us';
+}]);
+app.run(['$route', function($route) {
+    $route.reload();
 }]);
