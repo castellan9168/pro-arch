@@ -20,6 +20,3 @@ app.config(['$routeProvider', function($routeProvider){
 app.controller('proArchCtrl',[ '$scope', '$route', function($scope, $route){
     $scope.message = 'Contact us';
 }]);
-app.run(['$route', function($route) {
-    $route.reload();
-}]);
