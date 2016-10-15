@@ -1,28 +1,39 @@
-<div class='container'>
+<div class='container' ng-controller='projectsCtrl'>
     <div class='row'>
         <div class='col-lg-12'>
             <ul>
-                <li>
+                <li ng-click="projectTypeFilter.type = ''">
                     <a href=''>Wszystkie</a>
                 </li>
-                <li>
+                <li ng-click="projectTypeFilter.type = 'singleFamily'">
                     <a href=''>Jednorodzinne</a>
                 </li>
-                <li>
+                <li ng-click="projectTypeFilter.type = 'multiFamily'">
                     <a href=''>Wielorodzinne</a>
                 </li>
-                <li>
+                <li ng-click="projectTypeFilter.type = 'office'">
                     <a href=''>Biurowe</a>
                 </li>
-                <li>
+                <li ng-click="projectTypeFilter.type = 'publicBuilding'">
                     <a href=''>Publiczne</a>
                 </li>
-                <li>
+                <li ng-click="projectTypeFilter.type = 'interior'">
                     <a href=''>Wnętrza</a>
                 </li>
             </ul>
         </div>
     </div>
     <div class='row'>
+        <div class='col-lg-3 project' ng-repeat='project in projectsList | filter: projectTypeFilter'>
+            <a href=''>
+                <figure>
+                </figure>
+                <div>
+                    {{project.basicData.name}}
+                    <br>
+                    {{project.basicData.location}}
+                </div>
+            </a>
+        </div>
     </div>
 </div>

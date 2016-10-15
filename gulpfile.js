@@ -74,7 +74,7 @@ gulp.task('default', function (callback) {
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/**/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
