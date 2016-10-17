@@ -1,4 +1,6 @@
-var app = angular.module('proArch', ['ngRoute']);
+var app = angular.module('proArch', ['ngRoute', 'projectDetails']);
+var project = angular.module('projectDetails',['ngRoute']);
+
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
     .when('/main', {
@@ -7,8 +9,8 @@ app.config(['$routeProvider', function($routeProvider){
     .when('/projects', {
         templateUrl : 'html/projects.html'
     })
-    .when('/projectTemplate/:name', {
-        templateUrl : 'html/projectTemplate.html'
+    .when('/projectTemplate/:id', {
+        template : '<project-details></project-details>'
     })
     .when('/office', {
         templateUrl : 'html/office.html'
@@ -25,63 +27,21 @@ app.controller('proArchCtrl',[ '$scope', function($scope){
     $scope.message = 'Contact us';
 }]);
 
-app.controller('projectsCtrl', ['$scope', function($scope) {
-    $scope.projectMessage = 'Szablon szczegolow projektu';
+app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.projectTypeFilter = {};
-    $scope.projectsList = [
-        {
-            basicData: {
-                name: 'Project 1',
-                location: 'Location 1',
-            },
-            year: 2010,
-            status: 'Zrealizowany',
-            type: 'singleFamily'
-        },
-        {
-            basicData: {
-                name: 'Project 2',
-                location: 'Location 2',
-            },
-            year: 2011,
-            status: 'W budowie',
-            type: 'interior'
-        },
-        {
-            basicData: {
-                name: 'Project 3',
-                location: 'Location 3',
-            },
-            year: 2011,
-            status: 'W budowie',
-            type: 'singleFamily'
-        },
-        {
-            basicData: {
-                name: 'Project 4',
-                location: 'Location 4',
-            },
-            year: 2011,
-            status: 'W budowie',
-            type: 'multiFamily'
-        },
-        {
-            basicData: {
-                name: 'Project 5',
-                location: 'Location 5',
-            },
-            year: 2011,
-            status: 'W budowie',
-            type: 'office'
-        },
-        {
-            basicData: {
-                name: 'Project 6',
-                location: 'Location 6',
-            },
-            year: 2011,
-            status: 'W budowie',
-            type: 'publicBuilding'
-        }
-    ];
+
+    $http.get('projects/projects.json').then(function(response) {
+        $scope.projectsList = response.data;
+    });
 }]);
+
+project.component('projectDetails', {
+    templateUrl : 'html/projectTemplate.html',
+    controller: ['$http', '$routeParams',
+        function projectDetailsController($http, $routeParams) {
+            var self = this;
+            $http.get('projects/' + $routeParams.id + '.json').then(function(response) {
+                self.project = response.data;
+            });
+        }]
+});

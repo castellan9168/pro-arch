@@ -41,6 +41,11 @@ gulp.task('sub-pages', function() {
         .pipe(gulp.dest('dist/html'));
 });
 
+gulp.task('projects', function() {
+    return gulp.src('app/projects/**/*')
+        .pipe(gulp.dest('dist/projects'));
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -75,12 +80,13 @@ gulp.task('default', function (callback) {
 gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html', browserSync.reload);
+    gulp.watch('app/**/*.json', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('build', function(callback) {
     runSequence('clean:dist',
-        ['sass', 'useref', 'images', 'fonts', 'sub-pages'],
+        ['sass', 'useref', 'images', 'projects', 'fonts', 'sub-pages'],
         callback
     );
 });
