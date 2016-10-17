@@ -7,13 +7,16 @@ app.config(['$routeProvider', function($routeProvider){
     .when('/projects', {
         templateUrl : 'html/projects.html'
     })
+    .when('/projectTemplate/:name', {
+        templateUrl : 'html/projectTemplate.html'
+    })
     .when('/office', {
         templateUrl : 'html/office.html'
     })
     .when('/contact', {
         templateUrl : 'html/contact.html'
-    });
-    $routeProvider.otherwise({
+    })
+    .otherwise({
         redirectTo: "main"
     });
 }]);
@@ -23,6 +26,7 @@ app.controller('proArchCtrl',[ '$scope', function($scope){
 }]);
 
 app.controller('projectsCtrl', ['$scope', function($scope) {
+    $scope.projectMessage = 'Szablon szczegolow projektu';
     $scope.projectTypeFilter = {};
     $scope.projectsList = [
         {
