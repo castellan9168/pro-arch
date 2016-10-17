@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Project 1",
+        "location": "location 1",
+        "year": 2010,
+        "status": "Zrealizowany",
+        "type": "singleFamily"
+    },
+    {
+        "name": "Project 2",
+        "location": "location 2",
+        "year": 2011,
+        "status": "W budowie",
+        "type": "interior"
+    },
+    {
+        "name": "Project 3",
+        "location": "location 3",
+        "year": 2011,
+        "status": "W budowie",
+        "type": "singleFamily"
+    },
+    {
+        "name": "Project 4",
+        "location": "location 4",
+        "year": 2011,
+        "status": "W budowie",
+        "type": "multiFamily"
+    },
+    {
+        "name": "Project 5",
+        "location": "location 5",
+        "year" : 2011,
+        "status": "W budowie",
+        "type": "office"
+    },
+    {
+        "name": "Project 6",
+        "location": "location 6",
+        "year": 2011,
+        "status": "W budowie",
+        "type": "publicBuilding"
+    }
+]

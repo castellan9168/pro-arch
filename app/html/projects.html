@@ -25,13 +25,13 @@
     </div>
     <div class='row'>
         <div class='col-lg-3 project' ng-repeat='project in projectsList | filter: projectTypeFilter'>
-            <a href='#projectTemplate/{{project.basicData.name}}'>
+            <a href='#projectTemplate/{{project.name}}'>
                 <figure>
                 </figure>
                 <div>
-                    {{project.basicData.name}}
+                    {{project.name}}
                     <br>
-                    {{project.basicData.location}}
+                    {{project.location}}
                 </div>
             </a>
         </div>
