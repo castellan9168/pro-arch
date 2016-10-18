@@ -1,4 +1,6 @@
-var app = angular.module('proArch', ['ngRoute']);
+var app = angular.module('proArch', ['ngRoute', 'projectDetails']);
+var project = angular.module('projectDetails',['ngRoute']);
+
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
     .when('/main', {
@@ -7,8 +9,8 @@ app.config(['$routeProvider', function($routeProvider){
     .when('/projects', {
         templateUrl : 'html/projects.html'
     })
-    .when('/projectTemplate/:name', {
-        templateUrl : 'html/projectTemplate.html'
+    .when('/projectTemplate/:id', {
+        template : '<project-details></project-details>'
     })
     .when('/office', {
         templateUrl : 'html/office.html'
@@ -33,3 +35,14 @@ app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.projectsList = response.data;
     });
 }]);
+
+project.component('projectDetails', {
+    templateUrl : 'html/projectTemplate.html',
+    controller: ['$http', '$routeParams',
+        function projectDetailsController($http, $routeParams) {
+            var self = this;
+            $http.get('projects/' + $routeParams.id + '.json').then(function(response) {
+                self.project = response.data;
+            });
+        }]
+});

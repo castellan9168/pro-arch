@@ -1,44 +1,38 @@
 [
     {
+        "id": "project-1",
         "name": "Project 1",
         "location": "location 1",
-        "year": 2010,
-        "status": "Zrealizowany",
         "type": "singleFamily"
     },
     {
+        "id": "project-2",
         "name": "Project 2",
         "location": "location 2",
-        "year": 2011,
-        "status": "W budowie",
         "type": "interior"
     },
     {
+        "id": "project-3",
         "name": "Project 3",
         "location": "location 3",
-        "year": 2011,
-        "status": "W budowie",
         "type": "singleFamily"
     },
     {
+        "id": "project-4",
         "name": "Project 4",
         "location": "location 4",
-        "year": 2011,
-        "status": "W budowie",
         "type": "multiFamily"
     },
     {
+        "id": "project-5",
         "name": "Project 5",
         "location": "location 5",
-        "year" : 2011,
-        "status": "W budowie",
         "type": "office"
     },
     {
+        "id": "project-6",
         "name": "Project 6",
         "location": "location 6",
-        "year": 2011,
-        "status": "W budowie",
         "type": "publicBuilding"
     }
 ]

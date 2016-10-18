@@ -1,17 +1,17 @@
-<div class='container' ng-controller='projectsCtrl'>
+<div class='container'>
     <div class='row'>
         <div class='col-lg-3'>
             <a href='#projects'>Wstecz</a>
         </div>
     </div>
     <div class='row'>
-        <div class='col-lg-12'>{{project.basicData.name}}</div>
+        <div class='col-lg-12'>{{$ctrl.project.name}}</div>
     </div>
     <div class='row'>
         <div class='col-lg-3'>Project template</div>
-        <div class='col-lg-3'>{{project.projectsList.basicData.location}}</div>
-        <div class='col-lg-3'>{{project.year}}</div>
-        <div class='col-lg-3'>{{project.status}}</div>
+        <div class='col-lg-3'>{{$ctrl.project.location}}</div>
+        <div class='col-lg-3'>{{$ctrl.project.year}}</div>
+        <div class='col-lg-3'>{{$ctrl.project.status}}</div>
     </div>
     <div class="row">
         <div class='col-lg-3'>{{12*13}}</div>
