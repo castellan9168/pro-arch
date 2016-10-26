@@ -1,9 +1,18 @@
+@import 'node_modules/jeet/scss/index';
+
+@include debug();
+
 body {
     background: #ecf0f1;
     color: #2c3e50;
     font-weight: 500;
 }
 
+.main {
+    @include center(1140px);
+}
+
 .project {
+    //@include col(60);
     margin-bottom: 30px;
 }
