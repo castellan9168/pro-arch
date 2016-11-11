@@ -9,9 +9,6 @@
 
     <link rel="stylesheet" href="css/styles.min.css">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/main.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,19 +17,19 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body ng-app='proArch' ng-controller='proArchCtrl'>
-        <nav class=''>
-                <div class=''>
-                    <a class='' href='#main'>Pro-Arch</a>
+    <body ng-app='proArch' ng-controller='proArchCtrl' class='container'>
+        <nav class='menu'>
+                <div class='logo'>
+                    <a href='#main'>Pro-Arch</a>
                 </div>
 
-                <div class='' id='navbar-collapse-1'>
-                    <ul class=''>
-                        <li><a href='#projects'>Projekty</a></li>
-                        <li><a href='#office'>Biuro</a></li>
-                        <li><a href='#contact'>Kontakt</a></li>
-                        <li><a href=''>En</a></li>
-                    </ul>
+                <div class='menuItems' id='navbar-collapse-1'>
+                    <div class='links'>
+                        <a href='#projects'>Projekty</a>
+                        <a href='#office'>Biuro</a>
+                        <a href='#contact'>Kontakt</a>
+                        <a href=''>En</a>
+                    </div>
                 </div>
         </nav>
         <div class='main' ng-view></div>
