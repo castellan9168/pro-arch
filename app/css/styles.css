@@ -1,50 +1,3 @@
-.heroImage {
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 3%;
-  margin-bottom: 34px; }
-  .heroImage::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .heroImage:last-child {
-    margin-right: 0%; }
-  .heroImage img {
-    width: 100%; }
-
-.startInfo {
-  color: #616161;
-  font-size: 14pt; }
-  .startInfo .welcomeText {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 48.5%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .startInfo .welcomeText::after {
-      content: '';
-      display: table;
-      clear: both; }
-    .startInfo .welcomeText:last-child {
-      margin-right: 0%; }
-  .startInfo .address {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 31.33333%;
-    margin-left: 17.16667%;
-    margin-right: 3%; }
-    .startInfo .address::after {
-      content: '';
-      display: table;
-      clear: both; }
-    .startInfo .address:last-child {
-      margin-right: 0%; }
-
 * {
   margin: 0;
   padding: 0;
@@ -110,3 +63,50 @@
       margin-right: 30px; }
       .menu .menuItems a:last-of-type {
         margin-right: 0px; }
+
+.heroImage {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-bottom: 34px; }
+  .heroImage::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .heroImage:last-child {
+    margin-right: 0%; }
+  .heroImage img {
+    width: 100%; }
+
+.startInfo {
+  color: #616161;
+  font-size: 14pt; }
+  .startInfo .welcomeText {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .startInfo .welcomeText::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .startInfo .welcomeText:last-child {
+      margin-right: 0%; }
+  .startInfo .address {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 31.33333%;
+    margin-left: 17.16667%;
+    margin-right: 3%; }
+    .startInfo .address::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .startInfo .address:last-child {
+      margin-right: 0%; }

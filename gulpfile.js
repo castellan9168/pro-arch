@@ -10,9 +10,6 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 
-gulp.task('hello', function() {
-    console.log('Hello Maciek');
-});
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss') // Converts Sass to CSS with gulp-sass
@@ -58,7 +55,6 @@ gulp.task('useref', function(){
     return gulp.src('app/*.html')
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
-        //Minifies only if it's CSS file
         .pipe(gulpIf('*.css', cssNano()))
         .pipe(gulp.dest('dist'));
 });
@@ -86,7 +82,8 @@ gulp.task('watch', ['browser-sync', 'sass'], function() {
 
 gulp.task('build', function(callback) {
     runSequence('clean:dist',
-        ['sass', 'useref', 'images', 'projects', 'fonts', 'sub-pages'],
+        ['sass', 'images', 'projects', 'fonts', 'sub-pages'],
+        'useref',
         callback
     );
 });

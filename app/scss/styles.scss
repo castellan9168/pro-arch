@@ -1,8 +1,5 @@
 @import 'node_modules/jeet/scss/index';
 @import '_settings';
-@import '_main';
-
-//@include debug();
 
 * {
     margin: 0;
@@ -45,3 +42,5 @@
         }
     }
 }
+
+@import '_main';
