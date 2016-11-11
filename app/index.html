@@ -8,6 +8,7 @@
     <title>Pro-Arch</title>
 
     <!--build:css css/styles.min.css-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
     <!--endbuild-->
 
@@ -23,19 +24,19 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-    <body ng-app='proArch' ng-controller='proArchCtrl'>
-        <nav class=''>
-                <div class=''>
-                    <a class='' href='#main'>Pro-Arch</a>
+    <body ng-app='proArch' ng-controller='proArchCtrl' class='container'>
+        <nav class='menu'>
+                <div class='logo'>
+                    <a href='#main'>Pro-Arch</a>
                 </div>
 
-                <div class='' id='navbar-collapse-1'>
-                    <ul class=''>
-                        <li><a href='#projects'>Projekty</a></li>
-                        <li><a href='#office'>Biuro</a></li>
-                        <li><a href='#contact'>Kontakt</a></li>
-                        <li><a href=''>En</a></li>
-                    </ul>
+                <div class='menuItems' id='navbar-collapse-1'>
+                    <div class='links'>
+                        <a href='#projects'>Projekty</a>
+                        <a href='#office'>Biuro</a>
+                        <a href='#contact'>Kontakt</a>
+                        <a href=''>En</a>
+                    </div>
                 </div>
         </nav>
         <div class='main' ng-view></div>
