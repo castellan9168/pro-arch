@@ -1,0 +1,29 @@
+.menu {
+    height: 3rem;
+    padding-top: 2em;
+    margin-bottom: 26px;
+    & .logo {
+        & a {
+            color: rgba(33,33,33 ,1);
+            font-size: 24pt;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+    & .menuItems {
+        & .links {
+            float: right;
+            padding-top: 10px;
+        }
+        & a {
+            color: rgba(33,33,33 ,1);
+            font-size: 16pt;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 30px;
+            &:last-of-type {
+                margin-right: 0px;
+            }
+        }
+    }
+}
