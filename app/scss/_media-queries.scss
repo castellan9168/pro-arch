@@ -6,13 +6,16 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .menu {
         & .logo {
-            @include column(3/12);
+            @include column(4/12);
         }
         & .menuItems {
-            @include column(6/12, $offset: 3/12);
+            @include column(6/12, $offset: 2/12);
+            & .links {
+                display: none;
+            }
         }
     }
     .startInfo {
@@ -29,6 +32,9 @@
         }
         & .menuItems {
             @include column(6/12, $offset: 3/12);
+            & #menu-icon {
+                display: none;
+            }
         }
     }
     .startInfo {
@@ -48,6 +54,9 @@
         }
         & .menuItems {
             @include column(6/12, $offset: 3/12);
+            & #menu-icon {
+                display: none;
+            }
         }
     }
     .startInfo {
