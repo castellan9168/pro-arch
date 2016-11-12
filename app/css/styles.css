@@ -1,13 +1,15 @@
 @media (max-width: 320px) {
+  .menu .logo .companyName {
+    display: none; }
   .startInfo .welcomeText {
     margin-bottom: 34px; } }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .menu .logo {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 22.75%;
+    width: 39.91667%;
     margin-left: 0%;
     margin-right: 3%; }
     .menu .logo::after {
@@ -20,7 +22,7 @@
     float: left;
     clear: none;
     text-align: inherit;
-    width: 48.5%;
+    width: 31.33333%;
     margin-left: 25.75%;
     margin-right: 3%; }
     .menu .menuItems::after {
@@ -29,6 +31,15 @@
       clear: both; }
     .menu .menuItems:last-child {
       margin-right: 0%; }
+    .menu .menuItems nav ul, .menu .menuItems nav:active ul {
+      display: none;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .menu .menuItems nav li {
+      width: 100%;
+      text-align: right; }
+    .menu .menuItems nav:hover ul {
+      display: block; }
   .startInfo .welcomeText {
     margin-bottom: 86px; } }
 
@@ -59,6 +70,8 @@
       clear: both; }
     .menu .menuItems:last-child {
       margin-right: 0%; }
+    .menu .menuItems #menu-icon {
+      display: none; }
   .startInfo .welcomeText {
     float: left;
     clear: none;
@@ -113,6 +126,8 @@
       clear: both; }
     .menu .menuItems:last-child {
       margin-right: 0%; }
+    .menu .menuItems #menu-icon {
+      display: none; }
   .startInfo .welcomeText {
     float: left;
     clear: none;
@@ -161,9 +176,9 @@
     clear: both; }
 
 .menu {
-  height: 3rem;
-  padding-top: 2em;
-  margin-bottom: 40px; }
+  padding-top: 24px;
+  height: 58px;
+  margin-bottom: 22px; }
   .menu .logo a {
     color: #212121;
     font-size: 24pt;
@@ -173,17 +188,25 @@
       height: 34px;
       width: auto;
       margin-right: 10px; }
+  .menu .menuItems #menu-icon {
+    width: 34px;
+    height: 34px;
+    background: url(../images/icons/hamburger-menu.svg) no-repeat center;
+    float: right; }
   .menu .menuItems .links {
+    list-style-type: none;
     float: right;
     padding-top: 10px; }
-  .menu .menuItems a {
-    color: #212121;
-    font-size: 16pt;
-    font-weight: 500;
-    text-decoration: none;
-    margin-right: 30px; }
-    .menu .menuItems a:last-of-type {
-      margin-right: 0px; }
+    .menu .menuItems .links li {
+      display: inline-block;
+      margin-right: 30px; }
+      .menu .menuItems .links li a {
+        color: #212121;
+        font-size: 16pt;
+        font-weight: 500;
+        text-decoration: none; }
+      .menu .menuItems .links li:last-of-type {
+        margin-right: 0px; }
 
 .heroImage {
   float: left;

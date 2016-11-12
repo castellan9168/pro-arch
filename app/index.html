@@ -25,20 +25,22 @@
     <![endif]-->
     </head>
     <body ng-app='proArch' ng-controller='proArchCtrl' class='container'>
-        <nav class='menu'>
-                <div class='logo'>
-                    <a href='#main'><img src='images\icons\pro-arch-logo_simple.svg'>Pro-Arch</a>
-                </div>
-
-                <div class='menuItems' id='navbar-collapse-1'>
-                    <div class='links'>
-                        <a href='#projects'>Projekty</a>
-                        <a href='#office'>Biuro</a>
-                        <a href='#contact'>Kontakt</a>
-                        <a href=''>En</a>
-                    </div>
-                </div>
-        </nav>
+        <div class='menu'>
+            <div class='logo'>
+                <a href='#main'><img src='images/icons/pro-arch-logo_simple.svg'><span class='companyName'>Pro-Arch</span></a>
+            </div>
+            <div class='menuItems'>
+                <nav>
+                    <a href='' id="menu-icon"></a>
+                    <ul class='links' id='menu-collapse'>
+                        <li><a href='#projects'>Projekty</a></li>
+                        <li><a href='#office'>Biuro</a></li>
+                        <li><a href='#contact'>Kontakt</a></li>
+                        <li><a href=''>En</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class='main' ng-view></div>
   </body>
   <script async></script>

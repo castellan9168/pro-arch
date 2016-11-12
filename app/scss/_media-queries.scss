@@ -1,4 +1,7 @@
 @media (max-width: 320px) {
+    .menu .logo .companyName {
+        display: none;
+    }
     .startInfo {
         & .welcomeText {
             margin-bottom: 34px;
@@ -6,13 +9,25 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .menu {
         & .logo {
-            @include column(3/12);
+            @include column(5/12);
         }
         & .menuItems {
-            @include column(6/12, $offset: 3/12);
+            @include column(4/12, $offset: 3/12);
+            nav ul, nav:active ul {
+                display: none;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            nav li {
+                width: 100%;
+                text-align: right;
+            }
+            nav:hover ul {
+                display: block;
+            }
         }
     }
     .startInfo {
@@ -29,6 +44,9 @@
         }
         & .menuItems {
             @include column(6/12, $offset: 3/12);
+            & #menu-icon {
+                display: none;
+            }
         }
     }
     .startInfo {
@@ -48,6 +66,9 @@
         }
         & .menuItems {
             @include column(6/12, $offset: 3/12);
+            & #menu-icon {
+                display: none;
+            }
         }
     }
     .startInfo {
