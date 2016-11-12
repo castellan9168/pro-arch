@@ -8,6 +8,11 @@
             font-size: 24pt;
             font-weight: 700;
             text-decoration: none;
+            & img {
+                height: 34px;
+                width: auto;
+                margin-right: 10px;
+            }
         }
     }
     & .menuItems {
