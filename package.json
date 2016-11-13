@@ -1,7 +1,7 @@
 {
   "name": "pro-arch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for architectural office",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/castellan9168/pro-arch.git"
   },
-  "author": "",
+  "author": "Maciej Ziolkowski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/castellan9168/pro-arch/issues"
@@ -25,6 +25,7 @@
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
     "gulp-imagemin": "^3.0.3",
+    "gulp-remove-code": "^1.0.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",

@@ -18,15 +18,16 @@
             @include column(4/12, $offset: 3/12);
             nav ul, nav:active ul {
                 display: none;
-                padding-top: 20px;
-                padding-bottom: 20px;
             }
             nav li {
                 width: 100%;
                 text-align: right;
+                height: 35px;
             }
             nav:hover ul {
                 display: block;
+                padding-top: 17px;
+                padding-bottom: 11px;
             }
         }
     }

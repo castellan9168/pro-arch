@@ -12,6 +12,14 @@
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
     <!--endbuild-->
 
+    <!--removeIf(production)-->
+    <script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+    <script>
+        window.onload = function() {
+            baseliner = new Baseliner({ gridColor: 'red' });
+        }
+    </script>
+    <!--endRemoveIf(production)-->
     <!-- build:js js/main.min.js -->
     <script src="..\node_modules\angular\angular.js"></script>
     <script src='..\node_modules\angular-route\angular-route.js'></script>

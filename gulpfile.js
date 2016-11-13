@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var removeCode = require('gulp-remove-code');
 
 
 gulp.task('sass', function(){
@@ -56,6 +57,7 @@ gulp.task('useref', function(){
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', cssNano()))
+        .pipe(removeCode({production:true}))
         .pipe(gulp.dest('dist'));
 });
 
@@ -66,6 +68,12 @@ gulp.task('clean:dist', function() {
 gulp.task('cache:clear', function (callback) {
     return cache.clearAll(callback);
 });
+
+/*gulp.task('clean:html', function() {
+    return gulp.src('app/index.html')
+        .pipe(removeCode({production:true}))
+        .pipe(gulp.dest('dist'));
+});*/
 
 gulp.task('default', function (callback) {
     runSequence(['sass', 'browser-sync', 'watch'],

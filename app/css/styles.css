@@ -32,14 +32,15 @@
     .menu .menuItems:last-child {
       margin-right: 0%; }
     .menu .menuItems nav ul, .menu .menuItems nav:active ul {
-      display: none;
-      padding-top: 20px;
-      padding-bottom: 20px; }
+      display: none; }
     .menu .menuItems nav li {
       width: 100%;
-      text-align: right; }
+      text-align: right;
+      height: 35px; }
     .menu .menuItems nav:hover ul {
-      display: block; }
+      display: block;
+      padding-top: 17px;
+      padding-bottom: 11px; }
   .startInfo .welcomeText {
     margin-bottom: 86px; } }
 
@@ -215,7 +216,7 @@
   width: 100%;
   margin-left: 0%;
   margin-right: 3%;
-  margin-bottom: 34px; }
+  margin-bottom: 40px; }
   .heroImage::after {
     content: '';
     display: table;
@@ -233,7 +234,8 @@
   margin-left: auto;
   margin-right: auto;
   color: #616161;
-  font-size: 14pt; }
+  font-size: 14pt;
+  line-height: 26px; }
   .startInfo:first-child {
     margin-left: auto; }
   .startInfo:last-child {
