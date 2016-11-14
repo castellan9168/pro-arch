@@ -1,39 +1,35 @@
-<div class='container' ng-controller='projectsCtrl'>
-    <div class='row'>
-        <div class='col-3'>
-            <ul>
-                <li ng-click="projectTypeFilter.type = ''">
-                    <a href=''>Wszystkie</a>
-                </li>
-                <li ng-click="projectTypeFilter.type = 'singleFamily'">
-                    <a href=''>Jednorodzinne</a>
-                </li>
-                <li ng-click="projectTypeFilter.type = 'multiFamily'">
-                    <a href=''>Wielorodzinne</a>
-                </li>
-                <li ng-click="projectTypeFilter.type = 'office'">
-                    <a href=''>Biurowe</a>
-                </li>
-                <li ng-click="projectTypeFilter.type = 'publicBuilding'">
-                    <a href=''>Publiczne</a>
-                </li>
-                <li ng-click="projectTypeFilter.type = 'interior'">
-                    <a href=''>Wnętrza</a>
-                </li>
-            </ul>
-        </div>
+<div ng-controller='projectsCtrl'>
+    <div class='projectsFilters'>
+        <ul>
+            <li ng-click="projectTypeFilter.type = ''">
+                <a href=''>Wszystkie</a>
+            </li>
+            <li ng-click="projectTypeFilter.type = 'singleFamily'">
+                <a href=''>Jednorodzinne</a>
+            </li>
+            <li ng-click="projectTypeFilter.type = 'multiFamily'">
+                <a href=''>Wielorodzinne</a>
+            </li>
+            <li ng-click="projectTypeFilter.type = 'office'">
+                <a href=''>Biurowe</a>
+            </li>
+            <li ng-click="projectTypeFilter.type = 'publicBuilding'">
+                <a href=''>Publiczne</a>
+            </li>
+            <li ng-click="projectTypeFilter.type = 'interior'">
+                <a href=''>Wnętrza</a>
+            </li>
+        </ul>
     </div>
-    <div class='row'>
-        <div class='col-3 project' ng-repeat='project in projectsList | filter: projectTypeFilter'>
-            <a href='#projectTemplate/{{project.id}}'>
-                <figure>
-                </figure>
-                <div>
-                    {{project.name}}
-                    <br>
-                    {{project.location}}
-                </div>
-            </a>
-        </div>
+    <div class='projectGalleryElement' ng-repeat='project in projectsList | filter: projectTypeFilter'>
+        <a href='#projectTemplate/{{project.id}}'>
+            <figure>
+            </figure>
+            <div>
+                {{project.name}}
+                <br>
+                {{project.location}}
+            </div>
+        </a>
     </div>
 </div>

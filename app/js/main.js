@@ -24,7 +24,7 @@ app.config(['$routeProvider', function($routeProvider){
 }]);
 
 app.controller('proArchCtrl',[ '$scope', function($scope){
-    $scope.message = 'Contact us';
+    
 }]);
 
 app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
