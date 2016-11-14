@@ -34,5 +34,23 @@
         "name": "Project 6",
         "location": "location 6",
         "type": "publicBuilding"
+    },
+    {
+        "id": "project-7",
+        "name": "Project 7",
+        "location": "location 7",
+        "type": "publicBuilding"
+    },
+    {
+        "id": "project-8",
+        "name": "Project 8",
+        "location": "location 8",
+        "type": "publicBuilding"
+    },
+    {
+        "id": "project-9",
+        "name": "Project 9",
+        "location": "location 9",
+        "type": "publicBuilding"
     }
 ]

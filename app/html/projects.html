@@ -23,8 +23,7 @@
     </div>
     <div class='projectGalleryElement' ng-repeat='project in projectsList | filter: projectTypeFilter'>
         <a href='#projectTemplate/{{project.id}}'>
-            <figure>
-            </figure>
+            <div class='pictureMockup'></div>
             <div>
                 {{project.name}}
                 <br>

@@ -1,0 +1,5 @@
+.contact {
+    img {
+        @include column(1/5, $cycle: 5);
+    }
+}
