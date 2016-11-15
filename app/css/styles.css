@@ -272,9 +272,9 @@
   float: left;
   clear: none;
   text-align: inherit;
-  width: 31.80667%;
+  width: 32%;
   margin-left: 0%;
-  margin-right: 2.29%;
+  margin-right: 2%;
   margin-bottom: 26px;
   list-style-type: none;
   position: relative; }
@@ -283,7 +283,7 @@
     display: table;
     clear: both; }
   .projectGalleryElement:nth-child(n) {
-    margin-right: 2.29%;
+    margin-right: 2%;
     float: left;
     clear: none; }
   .projectGalleryElement:nth-child(3n) {
@@ -291,25 +291,42 @@
     float: right; }
   .projectGalleryElement:nth-child(3n + 1) {
     clear: both; }
+  .projectGalleryElement .overlay {
+    position: relative; }
+    .projectGalleryElement .overlay:before {
+      content: '';
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(14, 120, 175, 0.5); }
   .projectGalleryElement .pictureMockup {
-    background-color: green;
-    height: 196px;
-    width: 100%;
-    margin-bottom: 6px; }
+    display: block;
+    background-color: #b6bdbd;
+    height: 226px;
+    width: 100%; }
   .projectGalleryElement a {
-    color: #212121;
+    color: white;
     text-decoration: none;
     text-align: right;
     line-height: 26px; }
     .projectGalleryElement a .projectNameLocation {
+      font-weight: 500;
       display: none;
       bottom: 20px;
       right: 15px;
       position: absolute; }
-    .projectGalleryElement a:hover .pictureMockup {
-      background: blue; }
-    .projectGalleryElement a:hover .projectNameLocation {
-      display: block; }
+  .projectGalleryElement:hover .overlay:before {
+    display: block;
+    z-index: 1; }
+  .projectGalleryElement:hover .pictureMockup {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%) contrast(200%) brightness(70%); }
+  .projectGalleryElement:hover .projectNameLocation {
+    display: block;
+    z-index: 2; }
 
 .contact img {
   float: left;

@@ -3,54 +3,63 @@
         "id": "project-1",
         "name": "Project 1",
         "location": "location 1",
-        "type": "singleFamily"
+        "type": "singleFamily",
+        "preview": "images/projects/project-1/project-1-preview.jpg"
     },
     {
         "id": "project-2",
         "name": "Project 2",
         "location": "location 2",
-        "type": "interior"
+        "type": "interior",
+        "preview": "images/projects/project-2/project-2-preview.jpg"
     },
     {
         "id": "project-3",
         "name": "Project 3",
         "location": "location 3",
-        "type": "singleFamily"
+        "type": "singleFamily",
+        "preview": "images/projects/project-3/project-3-preview.jpg"
     },
     {
         "id": "project-4",
         "name": "Project 4",
         "location": "location 4",
-        "type": "multiFamily"
+        "type": "multiFamily",
+        "preview": "images/projects/project-4/project-4-preview.jpg"
     },
     {
         "id": "project-5",
         "name": "Project 5",
         "location": "location 5",
-        "type": "office"
+        "type": "office",
+        "preview": "images/projects/project-5/project-5-preview.jpg"
     },
     {
         "id": "project-6",
         "name": "Project 6",
         "location": "location 6",
-        "type": "publicBuilding"
+        "type": "publicBuilding",
+        "preview": "images/projects/project-6/project-6-preview.jpg"
     },
     {
         "id": "project-7",
         "name": "Project 7",
         "location": "location 7",
-        "type": "publicBuilding"
+        "type": "publicBuilding",
+        "preview": ""
     },
     {
         "id": "project-8",
         "name": "Project 8",
         "location": "location 8",
-        "type": "publicBuilding"
+        "type": "publicBuilding",
+        "preview": ""
     },
     {
         "id": "project-9",
         "name": "Project 9",
         "location": "location 9",
-        "type": "publicBuilding"
+        "type": "publicBuilding",
+        "preview": ""
     }
 ]

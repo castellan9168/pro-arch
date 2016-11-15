@@ -24,7 +24,9 @@
     <ul>
         <li class='projectGalleryElement' ng-repeat='project in projectsList | filter: projectTypeFilter'>
             <a href='#projectTemplate/{{project.id}}'>
-                <img class='pictureMockup' src="" alt="">
+                <figure class='overlay'>
+                    <img class='pictureMockup' src="{{project.preview}}" alt="{{project.name}}">
+                </figure>
                 <div class='projectNameLocation'>{{project.name}} / {{project.location}}</div>
             </a>
         </li>
