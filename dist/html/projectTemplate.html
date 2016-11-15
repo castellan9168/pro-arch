@@ -1,20 +1,17 @@
-<div class='container'>
-    <div class='row'>
-        <div class='col-3'>
-            <a href='#projects'>Wstecz</a>
-        </div>
-    </div>
-    <div class='row'>
-        <div class='col-12'>{{$ctrl.project.name}}</div>
-    </div>
-    <div class='row'>
-        <div class='col-3'>Project template</div>
-        <div class='col-3'>{{$ctrl.project.location}}</div>
-        <div class='col-3'>{{$ctrl.project.year}}</div>
-        <div class='col-3'>{{$ctrl.project.status}}</div>
-    </div>
-    <div class="row">
-        <div class='col-3'>{{12*13}}</div>
-        <div class='col-3'>{{projectMessage}}</div>
-    </div>
+<div class='backButton'>
+    <a href='#projects'>Powrót do galerii</a>
+</div>
+<div class='projectHeroPicture'>
+    <picture>
+        <img ng-src="{{$ctrl.project.heroPicture}}" alt="Hero picture">
+    </picture>
+</div>
+<div class='projectDescription'>
+    <div class='projectNameLocation'>{{$scope.project.name}} / {{$scope.project.location}}</div>
+    <ul>
+        <li>Status: {{$ctrl.project.status}}</li>
+        <li>Rok: {{$ctrl.project.year}}</li>
+        <li>Powierzchnia: {{$ctrl.project.area}}</li>
+        <li>Klient: {{$ctrl.project.client}}</li>
+    </ul>
 </div>

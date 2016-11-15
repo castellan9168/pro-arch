@@ -322,11 +322,62 @@
     display: block;
     z-index: 1; }
   .projectGalleryElement:hover .pictureMockup {
-    filter: grayscale(100%);
+    filter: grayscale(100%) contrast(200%) brightness(70%);
     -webkit-filter: grayscale(100%) contrast(200%) brightness(70%); }
   .projectGalleryElement:hover .projectNameLocation {
     display: block;
     z-index: 2; }
+
+.backButton {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding-top: 22px;
+  margin-bottom: 25px; }
+  .backButton::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .backButton:last-child {
+    margin-right: 0%; }
+  .backButton a {
+    color: #212121;
+    font-weight: 500;
+    text-decoration: none; }
+
+.projectHeroPicture {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 57.08333%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .projectHeroPicture::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .projectHeroPicture:last-child {
+    margin-right: 0%; }
+  .projectHeroPicture img {
+    width: 100%;
+    height: auto; }
+
+.projectDescription {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 39.91667%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .projectDescription::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .projectDescription:last-child {
+    margin-right: 0%; }
 
 .contact img {
   float: left;

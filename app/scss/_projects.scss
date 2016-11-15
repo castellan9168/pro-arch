@@ -64,7 +64,7 @@
             z-index: 1;
         }
         .pictureMockup{
-            filter: grayscale(100%);
+            filter: grayscale(100%) contrast(200%) brightness(70%);
             -webkit-filter: grayscale(100%) contrast(200%) brightness(70%);
         }
         .projectNameLocation {

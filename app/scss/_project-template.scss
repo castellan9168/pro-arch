@@ -1,0 +1,22 @@
+.backButton {
+    @include column(1);
+    padding-top: 22px;
+    margin-bottom: 25px;
+    a {
+        color: rgba(33,33,33 ,1);
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+.projectHeroPicture {
+    @include column(7/12);
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.projectDescription {
+    @include column(5/12);
+}
