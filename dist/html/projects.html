@@ -21,14 +21,17 @@
             </li>
         </ul>
     </div>
-    <div class='projectGalleryElement' ng-repeat='project in projectsList | filter: projectTypeFilter'>
-        <a href='#projectTemplate/{{project.id}}'>
-            <div class='pictureMockup'></div>
-            <div>
-                {{project.name}}
-                <br>
-                {{project.location}}
-            </div>
-        </a>
-    </div>
+    <ul>
+        <li class='projectGalleryElement' ng-repeat='project in projectsList | filter: projectTypeFilter'>
+            <a href='#projectTemplate/{{project.id}}'>
+                <div class='pictureMockup'>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    {{project.name}}<br>
+                    {{project.location}}
+                </div>
+            </a>
+        </li>
+    </ul>
 </div>
