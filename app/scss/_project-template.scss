@@ -1,5 +1,4 @@
 .backButton {
-    @include column(1);
     padding-top: 22px;
     margin-bottom: 25px;
     a {
@@ -11,6 +10,8 @@
 
 .projectHeroPicture {
     @include column(7/12);
+
+    margin-bottom: 34px;
     img {
         width: 100%;
         height: auto;
@@ -19,4 +20,33 @@
 
 .projectDescription {
     @include column(5/12);
+
+    color: rgba(33,33,33 ,1);
+    .projectNameLocation {
+        font-weight: 500;
+        font-size: 18pt;
+        margin-bottom: 26px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 26px;
+        li {
+            height: 26px;
+        }
+    }
+
+    p {
+        line-height: 26px;
+    }
+}
+
+.columnLeft{
+    @include column(1/2);
+    line-height: 26px;
+}
+
+.columnRight {
+    @include column(1/2);
+    line-height: 26px;
 }

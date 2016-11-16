@@ -1,17 +1,43 @@
 <div class='backButton'>
     <a href='#projects'>Powrót do galerii</a>
 </div>
-<div class='projectHeroPicture'>
-    <picture>
+<secion>
+    <picture class='projectHeroPicture'>
         <img ng-src="{{$ctrl.project.heroPicture}}" alt="Hero picture">
     </picture>
-</div>
-<div class='projectDescription'>
-    <div class='projectNameLocation'>{{$scope.project.name}} / {{$scope.project.location}}</div>
-    <ul>
-        <li>Status: {{$ctrl.project.status}}</li>
-        <li>Rok: {{$ctrl.project.year}}</li>
-        <li>Powierzchnia: {{$ctrl.project.area}}</li>
-        <li>Klient: {{$ctrl.project.client}}</li>
-    </ul>
-</div>
+    <div class='projectDescription'>
+        <div class='projectNameLocation'>
+            {{$ctrl.project.name}} / {{$ctrl.project.location}}
+        </div>
+        <ul>
+            <li>Status: {{$ctrl.project.status}}</li>
+            <li>Rok: {{$ctrl.project.year}}</li>
+            <li>Powierzchnia: {{$ctrl.project.area}}</li>
+            <li>Klient: {{$ctrl.project.client}}</li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
+            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
+            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
+            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
+        </p>
+    </div>
+</secion>
+<section>
+    <div class='columnLeft'>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
+            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
+            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
+            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
+        </p>
+    </div>
+    <div class='columnRight'>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
+            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
+            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
+            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
+        </p>
+    </div>
+</section>

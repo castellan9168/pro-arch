@@ -3,3 +3,15 @@
         @include column(1/5, $cycle: 5);
     }
 }
+
+.first {
+    @include column(7/12);
+    height: 100px;
+    background: green;
+}
+
+.second {
+    @include column(5/12);
+    height: 100px;
+    background: green;
+}
