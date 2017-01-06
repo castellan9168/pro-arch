@@ -1,15 +1,9 @@
-@media (max-width: 320px) {
-  .menu .logo .companyName {
-    display: none; }
-  .startInfo .welcomeText {
-    margin-bottom: 34px; } }
-
-@media (max-width: 768px) {
+@media (min-width: 1025px) {
   .menu .logo {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 39.91667%;
+    width: 22.75%;
     margin-left: 0%;
     margin-right: 3%; }
     .menu .logo::after {
@@ -22,7 +16,7 @@
     float: left;
     clear: none;
     text-align: inherit;
-    width: 31.33333%;
+    width: 48.5%;
     margin-left: 25.75%;
     margin-right: 3%; }
     .menu .menuItems::after {
@@ -31,18 +25,54 @@
       clear: both; }
     .menu .menuItems:last-child {
       margin-right: 0%; }
-    .menu .menuItems nav ul, .menu .menuItems nav:active ul {
+    .menu .menuItems #menu-icon {
       display: none; }
-    .menu .menuItems nav li {
-      width: 100%;
-      text-align: right;
-      height: 35px; }
-    .menu .menuItems nav:hover ul {
-      display: block;
-      padding-top: 17px;
-      padding-bottom: 11px; }
   .startInfo .welcomeText {
-    margin-bottom: 86px; } }
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .startInfo .welcomeText::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .startInfo .welcomeText:last-child {
+      margin-right: 0%; }
+  .startInfo .address {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 31.33333%;
+    margin-left: 17.16667%;
+    margin-right: 3%; }
+    .startInfo .address::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .startInfo .address:last-child {
+      margin-right: 0%; }
+  .projectGalleryElement {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 32%;
+    margin-left: 0%;
+    margin-right: 2%; }
+    .projectGalleryElement::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .projectGalleryElement:nth-child(n) {
+      margin-right: 2%;
+      float: left;
+      clear: none; }
+    .projectGalleryElement:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+    .projectGalleryElement:nth-child(3n + 1) {
+      clear: both; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .menu .logo {
@@ -98,14 +128,34 @@
       display: table;
       clear: both; }
     .startInfo .address:last-child {
-      margin-right: 0%; } }
+      margin-right: 0%; }
+  .projectGalleryElement {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 32%;
+    margin-left: 0%;
+    margin-right: 2%; }
+    .projectGalleryElement::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .projectGalleryElement:nth-child(n) {
+      margin-right: 2%;
+      float: left;
+      clear: none; }
+    .projectGalleryElement:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+    .projectGalleryElement:nth-child(3n + 1) {
+      clear: both; } }
 
-@media (min-width: 1025px) {
+@media (max-width: 768px) {
   .menu .logo {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 22.75%;
+    width: 39.91667%;
     margin-left: 0%;
     margin-right: 3%; }
     .menu .logo::after {
@@ -118,7 +168,7 @@
     float: left;
     clear: none;
     text-align: inherit;
-    width: 48.5%;
+    width: 31.33333%;
     margin-left: 25.75%;
     margin-right: 3%; }
     .menu .menuItems::after {
@@ -127,34 +177,66 @@
       clear: both; }
     .menu .menuItems:last-child {
       margin-right: 0%; }
-    .menu .menuItems #menu-icon {
+    .menu .menuItems nav ul, .menu .menuItems nav:active ul {
       display: none; }
+    .menu .menuItems nav li {
+      width: 100%;
+      text-align: right;
+      height: 35px; }
+    .menu .menuItems nav:hover ul {
+      display: block;
+      padding-top: 17px;
+      padding-bottom: 11px; }
   .startInfo .welcomeText {
+    margin-bottom: 86px; }
+  .projectGalleryElement {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 48.5%;
+    width: 32%;
+    margin-left: 0%;
+    margin-right: 2%; }
+    .projectGalleryElement::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .projectGalleryElement:nth-child(n) {
+      margin-right: 2%;
+      float: left;
+      clear: none; }
+    .projectGalleryElement:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+    .projectGalleryElement:nth-child(3n + 1) {
+      clear: both; } }
+
+@media (max-width: 320px) {
+  .menu .logo .companyName {
+    display: none; }
+  .startInfo .welcomeText {
+    margin-bottom: 34px; }
+  .startInfo .address {
+    margin-bottom: 34px; }
+  .projectGalleryElement {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
     margin-left: 0%;
     margin-right: 3%; }
-    .startInfo .welcomeText::after {
+    .projectGalleryElement::after {
       content: '';
       display: table;
       clear: both; }
-    .startInfo .welcomeText:last-child {
-      margin-right: 0%; }
-  .startInfo .address {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 31.33333%;
-    margin-left: 17.16667%;
-    margin-right: 3%; }
-    .startInfo .address::after {
-      content: '';
-      display: table;
-      clear: both; }
-    .startInfo .address:last-child {
-      margin-right: 0%; } }
+    .projectGalleryElement:nth-child(n) {
+      margin-right: 3%;
+      float: left;
+      clear: none; }
+    .projectGalleryElement:nth-child(1n) {
+      margin-right: 0%;
+      float: right; }
+    .projectGalleryElement:nth-child(1n + 1) {
+      clear: both; } }
 
 * {
   margin: 0;
@@ -269,28 +351,9 @@
         text-decoration: none; }
 
 .projectGalleryElement {
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 32%;
-  margin-left: 0%;
-  margin-right: 2%;
   margin-bottom: 26px;
   list-style-type: none;
   position: relative; }
-  .projectGalleryElement::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .projectGalleryElement:nth-child(n) {
-    margin-right: 2%;
-    float: left;
-    clear: none; }
-  .projectGalleryElement:nth-child(3n) {
-    margin-right: 0%;
-    float: right; }
-  .projectGalleryElement:nth-child(3n + 1) {
-    clear: both; }
   .projectGalleryElement .overlay {
     position: relative; }
     .projectGalleryElement .overlay:before {
@@ -305,8 +368,8 @@
   .projectGalleryElement .pictureMockup {
     display: block;
     background-color: #b6bdbd;
-    height: 226px;
-    width: 100%; }
+    max-width: 100%;
+    height: auto; }
   .projectGalleryElement a {
     color: white;
     text-decoration: none;

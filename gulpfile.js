@@ -69,12 +69,6 @@ gulp.task('cache:clear', function (callback) {
     return cache.clearAll(callback);
 });
 
-/*gulp.task('clean:html', function() {
-    return gulp.src('app/index.html')
-        .pipe(removeCode({production:true}))
-        .pipe(gulp.dest('dist'));
-});*/
-
 gulp.task('default', function (callback) {
     runSequence(['sass', 'browser-sync', 'watch'],
         callback
