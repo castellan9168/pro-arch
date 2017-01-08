@@ -1,4 +1,12 @@
 {
-    "year": 2013,
-    "status": "Konkurs"
+    "id": "project-3",
+    "name": "Project 3",
+    "location": "Location 3",
+    "status": "Concept design",
+    "year": 2009,
+    "area": 1204,
+    "client": "Private",
+    "heroPicture": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi optio esse minus molestiae itaque aspernatur voluptatem vitae fuga nemo maxime sit ducimus corporis ipsa quibusdam, quaerat quas consequuntur dicta!",
+    "gallery": []
 }

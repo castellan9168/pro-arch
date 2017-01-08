@@ -1,4 +1,12 @@
 {
+	"id": "project-1",
+	"name": "Project 1",
+	"location": "Location 1",
+	"status": "In progress",
     "year": 2011,
-    "status": "Zrealizowany"
+    "area": 124,
+    "client": "Private",
+    "heroPicture": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi optio esse minus molestiae itaque aspernatur voluptatem vitae fuga nemo maxime sit ducimus corporis ipsa quibusdam, quaerat quas consequuntur dicta!",
+    "gallery": [ ]
 }

@@ -37,11 +37,20 @@ app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
 
 project.component('projectDetails', {
     templateUrl : 'html/projectTemplate.html',
-    controller: ['$http', '$routeParams',
-        function projectDetailsController($http, $routeParams) {
+    controller: ['$http', '$routeParams', '$scope',
+        function projectDetailsController($http, $routeParams, $scope) {
             var self = this;
+
             $http.get('projects/' + $routeParams.id + '.json').then(function(response) {
                 self.project = response.data;
+                gallery = self.project.gallery;
+                galleryColumnsSplit();
             });
+
+            function galleryColumnsSplit() {
+                $scope.firstColumn = gallery.slice(0, Math.ceil(gallery.length / 2));
+                $scope.secondColumn = gallery.slice(Math.ceil(gallery.length / 2), gallery.length);
+                console.log($scope.firstColumn, $scope.secondColumn);
+            }
         }]
 });

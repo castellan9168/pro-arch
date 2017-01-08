@@ -1,9 +1,17 @@
 {
+    "id": "project-2",
     "name": "Project 2",
     "location": "Location 2",
-    "status": "Zrealizowany",
+    "status": "Finished",
     "year": 2012,
     "area": 306,
-    "client": "Prywatny",
-    "heroPicture": "images/projects/project-2/project-2-hero-picture-1200.jpg"
+    "client": "Private",
+    "heroPicture": "images/projects/project-2/project-2-hero-picture-1200.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi optio esse minus molestiae itaque aspernatur voluptatem vitae fuga nemo maxime sit ducimus corporis ipsa quibusdam, quaerat quas consequuntur dicta!",
+    "gallery": [ "project-2-gallery-01.jpg",
+		"project-2-gallery-02.jpg",
+		"project-2-gallery-03.jpg",
+		"project-2-gallery-04.jpg",
+		"project-2-gallery-05.jpg",
+		"project-2-gallery-06.jpg"]
 }

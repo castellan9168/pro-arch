@@ -406,7 +406,7 @@
   width: 57.08333%;
   margin-left: 0%;
   margin-right: 3%;
-  margin-bottom: 34px; }
+  margin-bottom: 35px; }
   .projectHeroPicture::after {
     content: '';
     display: table;
@@ -443,35 +443,22 @@
   .projectDescription p {
     line-height: 26px; }
 
-.columnLeft {
+.projectPictures {
   float: left;
   clear: none;
   text-align: inherit;
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  line-height: 26px; }
-  .columnLeft::after {
+  list-style-type: none; }
+  .projectPictures::after {
     content: '';
     display: table;
     clear: both; }
-  .columnLeft:last-child {
+  .projectPictures:last-child {
     margin-right: 0%; }
-
-.columnRight {
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 48.5%;
-  margin-left: 0%;
-  margin-right: 3%;
-  line-height: 26px; }
-  .columnRight::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .columnRight:last-child {
-    margin-right: 0%; }
+  .projectPictures li {
+    margin-bottom: 15px; }
 
 .contact img {
   float: left;

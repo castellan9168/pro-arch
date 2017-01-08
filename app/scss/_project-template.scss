@@ -11,7 +11,7 @@
 .projectHeroPicture {
     @include column(7/12);
 
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     img {
         width: 100%;
         height: auto;
@@ -41,12 +41,10 @@
     }
 }
 
-.columnLeft{
+.projectPictures {
     @include column(1/2);
-    line-height: 26px;
-}
-
-.columnRight {
-    @include column(1/2);
-    line-height: 26px;
+    list-style-type: none;
+    li {
+        margin-bottom: 15px;
+    }
 }

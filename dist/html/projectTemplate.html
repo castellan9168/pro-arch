@@ -1,7 +1,7 @@
 <div class='backButton'>
     <a href='#projects'>Powrót do galerii</a>
 </div>
-<secion>
+<section>
     <picture class='projectHeroPicture'>
         <img ng-src="{{$ctrl.project.heroPicture}}" alt="Hero picture">
     </picture>
@@ -16,28 +16,17 @@
             <li>Klient: {{$ctrl.project.client}}</li>
         </ul>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
-            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
-            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
-            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
-        </p>
-    </div>
-</secion>
-<section>
-    <div class='columnLeft'>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
-            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
-            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
-            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
-        </p>
-    </div>
-    <div class='columnRight'>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fuga
-            minus reprehenderit sunt error similique optio soluta, laboriosam molestiae
-            doloremque dolores quibusdam totam porro ullam alias aspernatur sequi
-            assumenda nesciunt, quibusdam totam porro ullam alias aspernatur sequi!
+            {{$ctrl.project.description}}
         </p>
     </div>
 </section>
+<ul class='projectPictures'>
+    <li class='columnLeft' ng-repeat="picture in firstColumn">
+        <img ng-src=".\images\projects\{{$ctrl.project.id}}\{{picture}}" alt="image">
+    </li>
+</ul>
+<ul class='projectPictures'>
+    <li class='columnRight' ng-repeat="picture in secondColumn">
+        <img ng-src=".\images\projects\{{$ctrl.project.id}}\{{picture}}" alt="image">
+    </li>
+</ul>

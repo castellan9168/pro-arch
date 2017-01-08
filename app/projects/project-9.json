@@ -1,4 +1,12 @@
 {
+	"id": "project-9",
+    "name": "Project 9",
+    "location": "Location 9",
+    "status": "Construction",
     "year": 2016,
-    "status": "W budowie"
+    "area": 465,
+    "client": "Private",
+    "heroPicture": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi optio esse minus molestiae itaque aspernatur voluptatem vitae fuga nemo maxime sit ducimus corporis ipsa quibusdam, quaerat quas consequuntur dicta!",
+    "gallery": []
 }
