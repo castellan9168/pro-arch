@@ -14,7 +14,7 @@ var removeCode = require('gulp-remove-code');
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss') // Converts Sass to CSS with gulp-sass
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
             stream: true

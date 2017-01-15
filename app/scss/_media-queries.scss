@@ -21,6 +21,41 @@
     .projectGalleryElement {
         @include column(1/3, $cycle: 3, $gutter: 2);
     }
+
+    .secondContainer {
+        padding-top: 109px;
+        .mottoContainer {
+            position: absolute;
+            .motto {
+                margin: 0 auto;
+                width: 40%;
+                padding-top: 58px;
+                text-align: center;
+            }
+        }
+    }
+
+    .ownersProfiles {
+        .profileFirst {
+        @include column(1/2);
+        }
+        .pictureProfileSecond {
+            display: none;
+        }
+        .profileSecond {
+            @include column(1/2);
+        }
+    }
+
+    .addressAndPicture {
+        padding-top: 101px;
+        .contact {
+            @include column(1/3);
+        }
+        .officePicture {
+            @include column(2/3);
+        }
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -45,6 +80,41 @@
     }
     .projectGalleryElement {
         @include column(1/3, $cycle: 3, $gutter: 2);
+    }
+
+    .secondContainer {
+            padding-top: 109px;
+        .mottoContainer {
+            position: absolute;
+            .motto {
+                margin: 0 auto;
+                width: 40%;
+                padding-top: 58px;
+                text-align: center;
+            }
+        }
+    }
+
+    .ownersProfiles {
+        .profileFirst {
+            @include column(1/2);
+        }
+        .pictureProfileSecond {
+            display: none;
+        }
+        .profileSecond {
+            @include column(1/2);
+        }
+    }
+
+    .addressAndPicture {
+        padding-top: 101px;
+        .contact {
+            @include column(1/3);
+        }
+        .officePicture {
+            @include column(2/3);
+        }
     }
 }
 
@@ -78,6 +148,40 @@
     .projectGalleryElement {
         @include column(1/3, $cycle: 3, $gutter: 2);
     }
+
+    .secondContainer {
+        .mottoContainer {
+            position: static;
+            .motto {
+                width: 100%;
+                padding-top: 38px;
+                margin-bottom: 29px;
+                text-align: center;
+            }
+        }
+    }
+
+    .ownersProfiles {
+        .profileFirst {
+            @include column(1/2);
+        }
+        .pictureProfileSecond {
+            display: none;
+        }
+        .profileSecond {
+            @include column(1/2);
+        }
+    }
+
+    .addressAndPicture {
+        padding-top: 101px;
+        .contact {
+            @include column(1/3);
+        }
+        .officePicture {
+            @include column(2/3);
+        }
+    }
 }
 
 @media (max-width: 320px) {
@@ -94,5 +198,36 @@
     }
     .projectGalleryElement {
         @include column(1, $cycle: 1);
+    }
+
+    .secondContainer {
+        .mottoContainer {
+            .motto {
+                text-align: left;
+            }
+        }
+    }
+
+    .ownersProfiles {
+        .profileFirst {
+            @include column(1);
+            padding-bottom: 52px;
+        }
+        .pictureProfileSecond {
+            display: block;
+        }
+        .profileSecond {
+            @include column(1);
+        }
+    }
+
+    .addressAndPicture {
+        padding-top: 23px;
+        .contact {
+            @include column(1);
+        }
+        .officePicture {
+            display: none;
+        }
     }
 }

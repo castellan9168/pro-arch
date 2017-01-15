@@ -45,6 +45,9 @@
     @include column(1/2);
     list-style-type: none;
     li {
-        margin-bottom: 15px;
+        margin-bottom: 26px;
+    }
+    img {
+        width: 100%;
     }
 }
