@@ -1,0 +1,39 @@
+.imageAndMotto {
+	@include column(1);
+
+	.secondContainer{
+		position: relative;
+		.mottoContainer {
+			width: 100%;
+			.motto {
+				font-size: 30px;
+                line-height: 39px;
+			}
+		}
+		.picture {
+			img {
+				width: 100%;
+			}
+		}
+				
+	}
+}
+
+.ownersProfiles {
+	@include column(1);
+	
+	h3 {
+		font-size: 36px;
+		padding-top: 34px;
+		margin-bottom: 9px;
+	}
+
+	p {
+		line-height: 26px;
+	}
+
+	img {
+		width: 100%;
+	}
+	
+}

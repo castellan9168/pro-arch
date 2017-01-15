@@ -72,7 +72,72 @@
       margin-right: 0%;
       float: right; }
     .projectGalleryElement:nth-child(3n + 1) {
-      clear: both; } }
+      clear: both; }
+  .secondContainer {
+    padding-top: 109px; }
+    .secondContainer .mottoContainer {
+      position: absolute; }
+      .secondContainer .mottoContainer .motto {
+        margin: 0 auto;
+        width: 40%;
+        padding-top: 58px;
+        text-align: center; }
+  .ownersProfiles .profileFirst {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileFirst::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileFirst:last-child {
+      margin-right: 0%; }
+  .ownersProfiles .pictureProfileSecond {
+    display: none; }
+  .ownersProfiles .profileSecond {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileSecond::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileSecond:last-child {
+      margin-right: 0%; }
+  .addressAndPicture {
+    padding-top: 101px; }
+    .addressAndPicture .contact {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .contact::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .contact:last-child {
+        margin-right: 0%; }
+    .addressAndPicture .officePicture {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 65.66667%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .officePicture::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .officePicture:last-child {
+        margin-right: 0%; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .menu .logo {
@@ -148,7 +213,72 @@
       margin-right: 0%;
       float: right; }
     .projectGalleryElement:nth-child(3n + 1) {
-      clear: both; } }
+      clear: both; }
+  .secondContainer {
+    padding-top: 109px; }
+    .secondContainer .mottoContainer {
+      position: absolute; }
+      .secondContainer .mottoContainer .motto {
+        margin: 0 auto;
+        width: 40%;
+        padding-top: 58px;
+        text-align: center; }
+  .ownersProfiles .profileFirst {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileFirst::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileFirst:last-child {
+      margin-right: 0%; }
+  .ownersProfiles .pictureProfileSecond {
+    display: none; }
+  .ownersProfiles .profileSecond {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileSecond::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileSecond:last-child {
+      margin-right: 0%; }
+  .addressAndPicture {
+    padding-top: 101px; }
+    .addressAndPicture .contact {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .contact::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .contact:last-child {
+        margin-right: 0%; }
+    .addressAndPicture .officePicture {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 65.66667%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .officePicture::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .officePicture:last-child {
+        margin-right: 0%; } }
 
 @media (max-width: 768px) {
   .menu .logo {
@@ -208,7 +338,70 @@
       margin-right: 0%;
       float: right; }
     .projectGalleryElement:nth-child(3n + 1) {
-      clear: both; } }
+      clear: both; }
+  .secondContainer .mottoContainer {
+    position: static; }
+    .secondContainer .mottoContainer .motto {
+      width: 100%;
+      padding-top: 38px;
+      margin-bottom: 29px;
+      text-align: center; }
+  .ownersProfiles .profileFirst {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileFirst::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileFirst:last-child {
+      margin-right: 0%; }
+  .ownersProfiles .pictureProfileSecond {
+    display: none; }
+  .ownersProfiles .profileSecond {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileSecond::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileSecond:last-child {
+      margin-right: 0%; }
+  .addressAndPicture {
+    padding-top: 101px; }
+    .addressAndPicture .contact {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 31.33333%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .contact::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .contact:last-child {
+        margin-right: 0%; }
+    .addressAndPicture .officePicture {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 65.66667%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .officePicture::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .officePicture:last-child {
+        margin-right: 0%; } }
 
 @media (max-width: 320px) {
   .menu .logo .companyName {
@@ -236,7 +429,58 @@
       margin-right: 0%;
       float: right; }
     .projectGalleryElement:nth-child(1n + 1) {
-      clear: both; } }
+      clear: both; }
+  .secondContainer .mottoContainer .motto {
+    text-align: left; }
+  .ownersProfiles .profileFirst {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    padding-bottom: 52px; }
+    .ownersProfiles .profileFirst::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileFirst:last-child {
+      margin-right: 0%; }
+  .ownersProfiles .pictureProfileSecond {
+    display: block; }
+  .ownersProfiles .profileSecond {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .ownersProfiles .profileSecond::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .ownersProfiles .profileSecond:last-child {
+      margin-right: 0%; }
+  .addressAndPicture {
+    padding-top: 23px; }
+    .addressAndPicture .contact {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .addressAndPicture .contact::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .addressAndPicture .contact:last-child {
+        margin-right: 0%; }
+    .addressAndPicture .officePicture {
+      display: none; } }
+
+* {
+  background: rgba(0, 0, 255, 0.05); }
 
 * {
   margin: 0;
@@ -458,57 +702,75 @@
   .projectPictures:last-child {
     margin-right: 0%; }
   .projectPictures li {
-    margin-bottom: 15px; }
+    margin-bottom: 26px; }
+  .projectPictures img {
+    width: 100%; }
 
-.contact img {
+.imageAndMotto {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 17.6%;
+  width: 100%;
   margin-left: 0%;
   margin-right: 3%; }
-  .contact img::after {
+  .imageAndMotto::after {
     content: '';
     display: table;
     clear: both; }
-  .contact img:nth-child(n) {
-    margin-right: 3%;
-    float: left;
-    clear: none; }
-  .contact img:nth-child(5n) {
-    margin-right: 0%;
-    float: right; }
-  .contact img:nth-child(5n + 1) {
-    clear: both; }
+  .imageAndMotto:last-child {
+    margin-right: 0%; }
+  .imageAndMotto .secondContainer {
+    position: relative; }
+    .imageAndMotto .secondContainer .mottoContainer {
+      width: 100%; }
+      .imageAndMotto .secondContainer .mottoContainer .motto {
+        font-size: 30px;
+        line-height: 39px; }
+    .imageAndMotto .secondContainer .picture img {
+      width: 100%; }
 
-.first {
+.ownersProfiles {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 57.08333%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: 3%;
-  height: 100px;
-  background: green; }
-  .first::after {
+  margin-right: 3%; }
+  .ownersProfiles::after {
     content: '';
     display: table;
     clear: both; }
-  .first:last-child {
+  .ownersProfiles:last-child {
     margin-right: 0%; }
+  .ownersProfiles h3 {
+    font-size: 36px;
+    padding-top: 34px;
+    margin-bottom: 9px; }
+  .ownersProfiles p {
+    line-height: 26px; }
+  .ownersProfiles img {
+    width: 100%; }
 
-.second {
+.addressAndPicture {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 39.91667%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: 3%;
-  height: 100px;
-  background: green; }
-  .second::after {
+  margin-right: 3%; }
+  .addressAndPicture::after {
     content: '';
     display: table;
     clear: both; }
-  .second:last-child {
+  .addressAndPicture:last-child {
     margin-right: 0%; }
+  .addressAndPicture .contact h3 {
+    font-weight: 500;
+    font-size: 36px; }
+  .addressAndPicture .contact p {
+    line-height: 26px; }
+  .addressAndPicture .contact .address {
+    padding-top: 33px;
+    margin-bottom: 26px; }
+  .addressAndPicture .officePicture img {
+    width: 100%; }

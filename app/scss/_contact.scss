@@ -1,17 +1,22 @@
-.contact {
-    img {
-        @include column(1/5, $cycle: 5);
-    }
-}
+.addressAndPicture {
+	@include column(1);
+	.contact {
+		h3 {
+			font-weight: 500;
+			font-size: 36px;
+		}
+		p {
+			line-height: 26px;
+		}
 
-.first {
-    @include column(7/12);
-    height: 100px;
-    background: green;
-}
-
-.second {
-    @include column(5/12);
-    height: 100px;
-    background: green;
+		.address {
+			padding-top: 33px;
+			margin-bottom: 26px;
+		}
+	}
+	.officePicture {
+		img {
+			width: 100%;
+		}
+	}
 }
