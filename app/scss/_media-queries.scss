@@ -56,6 +56,12 @@
             @include column(2/3);
         }
     }
+
+    .destinationMap {
+        #map {
+            height: 590px;
+        }
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -114,6 +120,12 @@
         }
         .officePicture {
             @include column(2/3);
+        }
+    }
+
+    .destinationMap {
+        #map {
+            height: 590px;
         }
     }
 }
@@ -182,6 +194,12 @@
             @include column(2/3);
         }
     }
+
+    .destinationMap {
+        #map {
+            height: 434px;
+        }
+    }
 }
 
 @media (max-width: 320px) {
@@ -228,6 +246,12 @@
         }
         .officePicture {
             display: none;
+        }
+    }
+
+    .destinationMap {
+        #map {
+            height: 434px;
         }
     }
 }

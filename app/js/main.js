@@ -35,6 +35,32 @@ app.controller('projectsCtrl', ['$scope', '$http', function($scope, $http) {
     });
 }]);
 
+app.controller('mapCtrl', ['$scope', '$window', function($scope, $window){
+    var officeMarker = {lat: 52.075656, lng: 21.029483};
+
+    $window.map = new google.maps.Map(document.getElementById('map'), {
+        center: officeMarker,
+        zoom: 17,
+        mapTypeControl: false,
+        styles: [
+            {
+                featureType: 'poi',
+                stylers: [{visibility: 'off'}]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'labels.icon',
+                stylers: [{visibility: 'off'}]
+            }
+        ]
+    });
+
+    var marker = new google.maps.Marker({
+        position: officeMarker,
+        map: map
+    });
+}]);
+
 project.component('projectDetails', {
     templateUrl : 'html/projectTemplate.html',
     controller: ['$http', '$routeParams', '$scope',

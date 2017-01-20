@@ -1,5 +1,6 @@
 .addressAndPicture {
 	@include column(1);
+	margin-bottom: 34px;
 	.contact {
 		h3 {
 			font-weight: 500;
@@ -18,5 +19,12 @@
 		img {
 			width: 100%;
 		}
+	}
+}
+
+.destinationMap {
+	@include column(1);
+	#map {
+		width: 100%;
 	}
 }

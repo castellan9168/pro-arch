@@ -137,7 +137,9 @@
         display: table;
         clear: both; }
       .addressAndPicture .officePicture:last-child {
-        margin-right: 0%; } }
+        margin-right: 0%; }
+  .destinationMap #map {
+    height: 590px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .menu .logo {
@@ -278,7 +280,9 @@
         display: table;
         clear: both; }
       .addressAndPicture .officePicture:last-child {
-        margin-right: 0%; } }
+        margin-right: 0%; }
+  .destinationMap #map {
+    height: 590px; } }
 
 @media (max-width: 768px) {
   .menu .logo {
@@ -401,7 +405,9 @@
         display: table;
         clear: both; }
       .addressAndPicture .officePicture:last-child {
-        margin-right: 0%; } }
+        margin-right: 0%; }
+  .destinationMap #map {
+    height: 434px; } }
 
 @media (max-width: 320px) {
   .menu .logo .companyName {
@@ -477,7 +483,9 @@
       .addressAndPicture .contact:last-child {
         margin-right: 0%; }
     .addressAndPicture .officePicture {
-      display: none; } }
+      display: none; }
+  .destinationMap #map {
+    height: 434px; } }
 
 * {
   margin: 0;
@@ -754,7 +762,8 @@
   text-align: inherit;
   width: 100%;
   margin-left: 0%;
-  margin-right: 3%; }
+  margin-right: 3%;
+  margin-bottom: 34px; }
   .addressAndPicture::after {
     content: '';
     display: table;
@@ -770,4 +779,20 @@
     padding-top: 33px;
     margin-bottom: 26px; }
   .addressAndPicture .officePicture img {
+    width: 100%; }
+
+.destinationMap {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .destinationMap::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .destinationMap:last-child {
+    margin-right: 0%; }
+  .destinationMap #map {
     width: 100%; }

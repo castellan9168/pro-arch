@@ -12,3 +12,4 @@ To do list:
 - [ ] Correct gutter between columns in project details gallery
 - [ ] Office subpage
 - [ ] Contact subpage
+- [ ] Add Google Map
