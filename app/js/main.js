@@ -40,11 +40,11 @@ app.controller('mapCtrl', ['$scope', '$window', function($scope, $window){
 
     $window.map = new google.maps.Map(document.getElementById('map'), {
         center: officeMarker,
-        zoom: 17,
+        zoom: 15,
         mapTypeControl: false,
         styles: [
             {
-                featureType: 'poi',
+                featureType: 'poi.business',
                 stylers: [{visibility: 'off'}]
             },
             {

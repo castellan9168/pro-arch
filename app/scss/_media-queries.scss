@@ -1,142 +1,88 @@
-@media (min-width: 1025px) {
+@media (max-width: 599px) {
     .menu {
-        & .logo {
-            @include column(3/12);
+        .logo {
+            @include column(2/12);
+            .companyName {
+                display: none;
+            }
         }
         & .menuItems {
-            @include column(6/12, $offset: 3/12);
-            & #menu-icon {
+            @include column(7/12, $offset: 3/12);
+            nav ul, nav:active ul {
                 display: none;
+            }
+            nav li {
+                width: 100%;
+                text-align: right;
+                height: 35px;
+            }
+            nav:hover ul {
+                display: block;
+                padding-top: 17px;
+                padding-bottom: 11px;
             }
         }
     }
     .startInfo {
         & .welcomeText {
-            @include column(6/12);
+            margin-bottom: 34px;
         }
         & .address {
-            @include column(4/12, $offset: 2/12);
+            margin-bottom: 34px;
         }
     }
     .projectGalleryElement {
-        @include column(1/3, $cycle: 3, $gutter: 2);
+        @include column(1, $cycle: 1);
     }
 
     .secondContainer {
-        padding-top: 109px;
         .mottoContainer {
-            position: absolute;
             .motto {
-                margin: 0 auto;
-                width: 40%;
-                padding-top: 58px;
-                text-align: center;
+                text-align: left;
             }
         }
     }
 
     .ownersProfiles {
         .profileFirst {
-        @include column(1/2);
+            @include column(1);
+            padding-bottom: 52px;
         }
         .pictureProfileSecond {
-            display: none;
+            display: block;
         }
         .profileSecond {
-            @include column(1/2);
+            @include column(1);
         }
     }
 
     .addressAndPicture {
-        padding-top: 101px;
+        padding-top: 23px;
         .contact {
-            @include column(1/3);
+            @include column(1);
         }
         .officePicture {
-            @include column(2/3);
+            display: none;
         }
     }
 
     .destinationMap {
         #map {
-            height: 590px;
+            height: 434px;
         }
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .menu {
-        & .logo {
-            @include column(3/12);
-        }
-        & .menuItems {
-            @include column(6/12, $offset: 3/12);
-            & #menu-icon {
-                display: none;
-            }
-        }
-    }
-    .startInfo {
-        & .welcomeText {
-            @include column(7/12);
-        }
-        & .address {
-            @include column(4/12,  $offset: 1/12);
-        }
-    }
-    .projectGalleryElement {
-        @include column(1/3, $cycle: 3, $gutter: 2);
-    }
-
-    .secondContainer {
-            padding-top: 109px;
-        .mottoContainer {
-            position: absolute;
-            .motto {
-                margin: 0 auto;
-                width: 40%;
-                padding-top: 58px;
-                text-align: center;
-            }
-        }
-    }
-
-    .ownersProfiles {
-        .profileFirst {
-            @include column(1/2);
-        }
-        .pictureProfileSecond {
-            display: none;
-        }
-        .profileSecond {
-            @include column(1/2);
-        }
-    }
-
-    .addressAndPicture {
-        padding-top: 101px;
-        .contact {
-            @include column(1/3);
-        }
-        .officePicture {
-            @include column(2/3);
-        }
-    }
-
-    .destinationMap {
-        #map {
-            height: 590px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
+@media (min-width: 600px) {
     .menu {
         & .logo {
             @include column(5/12);
         }
         & .menuItems {
             @include column(4/12, $offset: 3/12);
+            & #menu-icon {
+                display: block;
+            }
             nav ul, nav:active ul {
                 display: none;
             }
@@ -202,56 +148,146 @@
     }
 }
 
-@media (max-width: 320px) {
-    .menu .logo .companyName {
-        display: none;
+@media (min-width: 900px) {
+    .menu {
+        & .logo {
+            @include column(3/12);
+        }
+        & .menuItems {
+            @include column(7/12, $offset: 2/12);
+            & #menu-icon {
+                display: none;
+            }
+            nav ul, nav:active ul {
+                display: initial;
+            }
+            nav li {
+                display: inline-block;
+                width: auto;
+            }
+            nav:hover ul {
+                display: initial;
+                padding-top: 14px;
+                padding-bottom: 0px;
+            }
+        }
     }
     .startInfo {
         & .welcomeText {
-            margin-bottom: 34px;
+            @include column(7/12);
         }
         & .address {
-            margin-bottom: 34px;
+            @include column(4/12,  $offset: 1/12);
         }
     }
     .projectGalleryElement {
-        @include column(1, $cycle: 1);
+        @include column(1/3, $cycle: 3, $gutter: 2);
     }
 
     .secondContainer {
+            padding-top: 109px;
         .mottoContainer {
+            position: absolute;
             .motto {
-                text-align: left;
+                margin: 0 auto;
+                width: 40%;
+                padding-top: 58px;
+                text-align: center;
             }
         }
     }
 
     .ownersProfiles {
         .profileFirst {
-            @include column(1);
-            padding-bottom: 52px;
+            @include column(1/2);
         }
         .pictureProfileSecond {
-            display: block;
+            display: none;
         }
         .profileSecond {
-            @include column(1);
+            @include column(1/2);
         }
     }
 
     .addressAndPicture {
-        padding-top: 23px;
+        padding-top: 101px;
         .contact {
-            @include column(1);
+            @include column(1/3);
         }
         .officePicture {
-            display: none;
+            @include column(2/3);
         }
     }
 
     .destinationMap {
         #map {
-            height: 434px;
+            height: 590px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu {
+        & .logo {
+            @include column(3/12);
+        }
+        & .menuItems {
+            @include column(6/12, $offset: 3/12);
+            & #menu-icon {
+                display: none;
+            }
+        }
+    }
+    .startInfo {
+        & .welcomeText {
+            @include column(6/12);
+        }
+        & .address {
+            @include column(4/12, $offset: 2/12);
+        }
+    }
+    .projectGalleryElement {
+        @include column(1/3, $cycle: 3, $gutter: 2);
+    }
+
+    .secondContainer {
+        padding-top: 109px;
+        .mottoContainer {
+            position: absolute;
+            .motto {
+                margin: 0 auto;
+                width: 40%;
+                padding-top: 58px;
+                text-align: center;
+            }
+        }
+    }
+
+    .ownersProfiles {
+        .profileFirst {
+        @include column(1/2);
+        }
+        .pictureProfileSecond {
+            display: none;
+        }
+        .profileSecond {
+            @include column(1/2);
+        }
+    }
+
+    .addressAndPicture {
+        padding-top: 101px;
+        .contact {
+            @include column(1/3);
+        }
+        .officePicture {
+            @include column(2/3);
+        }
+    }
+
+    .destinationMap {
+        #map {
+            height: 590px;
         }
     }
 }
